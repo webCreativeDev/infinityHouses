@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-dark-green: #2D362B;
+  --vt-c-medium-dark-green: #67675D;
+  --vt-c-medium-green: #88877A;
+  --vt-c-ligther-green: #959C92;
+  --vt-c-bege: #EFEDE7;
+
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-bege);
+}
+
+@font-face {
+  font-family: RobotoRegular;
+  src: url(../assets/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: RobotoMedium;
+  src: url(../assets/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: RobotoLight;
+  src: url(../assets/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: LoraRegular;
+  src: url(../assets/Lora/Lora-Regular.ttf);
+}
+
+
+body {
+  background: var(--color-background) !important;
+}
+
+.rm{
+  font-family: RobotoMedium !important;
+}
+.rr{
+  font-family: RobotoRegular !important;
+}
+.rr{
+  font-family: RobotoLight !important;
+}
+.lr{
+  font-family: LoraRegular;
+}
+
+.click{
+  cursor: pointer;
+}
+
+.nav-link{
+  color: black !important;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: RobotoRegular;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.19em;
+}
+.navbar{
+  width: 84%;
+  margin: auto;
+}
+.logo{
+  max-width: 200px;
+}
+
+label{
+  display:flex;
+  flex-direction:column;
+  width:40px;
+  height: 50px;
+  cursor:pointer;
+}
+
+label .line{
+  background: #2D362B;
+  border-radius:10px;
+  height:2px;
+  margin: 11px 0;
+
+}
+
+
+.line:nth-of-type(1){
+  width:100%;
+}
+
+.line:nth-of-type(2){
+  width:100%;
+}
+
+
+.line:nth-of-type(3){
+  width:100%;
+}
+

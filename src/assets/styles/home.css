@@ -1,0 +1,117 @@
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: black;
+    font-size: 18px;
+  }
+  .hr{
+    display: block;
+    height: 2px;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    background-color: #2D362B;
+    border: none;
+  }
+  .housesBox{
+    width: 100%;
+  }
+  .house{
+    font-family: RobotoLight;
+    font-weight: 300;
+    letter-spacing: 0.19em;
+    border: 1px solid var(--vt-c-dark-green);
+    font-size: 32px;
+    width: 230px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition-duration: 500ms;
+  }
+  .house:hover{
+    background-color: var(--vt-c-dark-green);
+    color: var(--vt-c-bege);
+    border: 1px solid var(--vt-c-bege);
+  }
+  
+
+
+  .textStyle{
+    letter-spacing: 4px;
+    color: var(--vt-c-dark-green) !important;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  
+  .h1{
+    letter-spacing: 4px;
+    color: var(--vt-c-dark-green) !important;
+    font-family: LoraRegular;
+    margin-top: 80px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 76px !important;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    line-height: 100px !important;
+    margin-right: auto;
+    letter-spacing: 0.19em;
+  }
+
+  .width{
+      width: 40%;
+      margin-top: 70px !important;
+  }
+  .check-availability{
+      background-color: var(--vt-c-dark-green);
+      color: var(--vt-c-bege);
+      text-align: center;
+      cursor: pointer;
+  }
+  .check-availability .text{
+    letter-spacing: 00.19em;
+    padding: 25px 30px;
+    font-size: 18px;
+    line-height: 40px;
+    font-size: RobotoMedium;
+}
+  
+.arrow{
+    fill: var(--vt-c-dark-green);
+    stroke: 1px;
+}
+.row-titles{
+    padding: 30px 8px;
+    font-size: RobotoMedium;
+    letter-spacing: 00.19em;
+}
+.text-number{
+    font-size: 36px;
+    font-family: RobotoRegular;
+    letter-spacing: 00.19em;
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  background-color: transparent;
+  color: transparent;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.numberOfGuests{
+  background-color: transparent;
+  border: transparent;
+}

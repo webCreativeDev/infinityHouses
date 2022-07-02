@@ -1,0 +1,141 @@
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.col-1{
+    min-width: 400px;
+    width: 50%;
+    position: relative;
+    height: auto;
+}
+
+.green-box{
+    position: absolute;
+    background-color: var(--vt-c-dark-green);
+    width: 20vw;
+    height: 25vw;
+    top: 3vw;
+    left: 0vw;
+}
+.image-box{
+    position: absolute;
+    background-color: #C4C4C4;
+    z-index: 2;
+    width: 20vw;
+    height: 25vw;
+    top: 8vw;
+    left: 7vw;
+}
+
+.title-about{
+    margin-top: 8vw;
+    font-family: LoraRegular;
+    font-size: 64px;
+    letter-spacing: 00.19em;
+    color: var(--vt-c-dark-green);
+    line-height: 60px;
+}
+.text-about{
+    margin-top: 2vw;
+    font-family: RobotoRegular;
+    font-size: 24px;
+    letter-spacing: 00.19em;
+    color: var(--vt-c-dark-green);
+    line-height: 30px;
+    letter-spacing: 00.10em;
+}
+
+.more-btn{
+    font-family: RobotoRegular;
+    font-weight: 300;
+    letter-spacing: 0.19em;
+    border: 1px solid var(--vt-c-dark-green);
+    font-size: 18px;
+    width: 230px;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition-duration: 500ms;
+
+    background-color: var(--vt-c-dark-green);
+    color: var(--vt-c-bege);
+    border: 1px solid var(--vt-c-bege);
+  }
+  .more-btn:hover{
+    background-color: var(--vt-c-bege);
+    color: var(--vt-c-dark-green);
+    border: 1px solid var(--vt-c-dark-green);
+  }
+  .interest-points{
+    width: 100%;
+    background-color: var(--vt-c-ligther-green);
+    height: auto;
+    margin-top: 200px;
+    position: relative;
+  }
+  .row-85{
+    width: 85%;
+    margin: 35px auto 0px auto;
+    position: relative;
+
+  }
+  .wrapper-interests{
+    padding: 40px 0px;
+  }
+  .title-interests{
+
+    font-family: LoraRegular;
+    font-size: 64px;
+    letter-spacing: 00.19em;
+    color: var(--vt-c-bege);
+}
+.activities{
+    padding-top: 40px;
+    font-family: LoraRegular;
+    font-size: 64px;
+    letter-spacing: 00.19em;
+    color: var(--vt-c-dark-green);
+}
+.interests{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.interest-card{
+  width: 280px;
+  height: 400px;
+  background-color: #C4C4C4;
+  margin: 40px 20px;
+}
+.row-100{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-40{
+  width: 45%;
+}
+.col-40 ul{
+  list-style-type: none;
+  padding: 0px;
+}
+.col-40 ul li {
+  margin: 40px 0px;
+  text-decoration: none;
+  width: 70%;
+  border-bottom: 1px solid var(--vt-c-dark-green);
+  font-family: LoraRegular;
+  font-size: 28px;
+  letter-spacing: 00.1em;
+  color: var(--vt-c-dark-green);
+}
+
+
+.col-60{
+  width: 55%;
+}

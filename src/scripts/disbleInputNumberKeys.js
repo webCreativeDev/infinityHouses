@@ -6,6 +6,8 @@ document.querySelector(".numberOfGuests").addEventListener("keypress", function 
         evt.preventDefault();
     } else if ( evt.target.value.length > 1 ){
         evt.preventDefault();
+    } else if ( parseInt(evt.target.value.length) > 12 ){
+        evt.preventDefault();
     }
 
 });

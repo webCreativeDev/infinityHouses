@@ -1,42 +1,52 @@
 <script>
 import "bootstrap";
 import "../assets/styles/home.css";
-import ArrowUpSvg from'../components/common/ArrowUpSvg.vue';
-import ArrowDownSvg from'../components/common/ArrowDownSvg.vue';
-import {disableKeys} from'../scripts/disbleInputNumberKeys' 
+import ArrowUpSvg from "../components/common/ArrowUpSvg.vue";
+import ArrowDownSvg from "../components/common/ArrowDownSvg.vue";
+import Calendar from "../components/datepicker/calendar.vue";
+import { disableKeys } from "../scripts/disbleInputNumberKeys";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default {
   data() {
     return {
-      guestsNumber : 1
-    }
+      guestsNumber: 1,
+      showCalendar: false,
+    };
   },
   methods: {
-    addGuests(){
-      this.guestsNumber += this.guestsNumber < 12  ? 1 : 0;
+    addGuests() {
+      this.guestsNumber += this.guestsNumber < 12 ? 1 : 0;
     },
-    removeGuests(){
-      this.guestsNumber += 1 < this.guestsNumber  ? -1 : 0;
+    removeGuests() {
+      this.guestsNumber += 1 < this.guestsNumber ? -1 : 0;
     },
-    updateGuests(event){
-      console.log(event)
-      if(parseInt(event.target.value) > 12){
+    updateGuests(event) {
+      if (parseInt(event.target.value) > 12) {
+        event.target.value = 12;
         event.preventDefault();
-      } 
+      }
       this.guestsNumber = parseInt(event.target.value);
     },
-    formattedNumber(number){
+    formattedNumber(number) {
       return ("0" + number).slice(-2);
-    }
+    },
+    openCalendar() {
+      this.showCalendar = !this.showCalendar;
+    },
+    navigateToHouses() {
+      this.$router.push("/houses");
+    },
   },
-  components : {
-      ArrowUpSvg,
-      ArrowDownSvg
+  components: {
+    ArrowUpSvg,
+    ArrowDownSvg,
+    Calendar,
   },
   mounted() {
-    disableKeys()
+    disableKeys();
   },
-}
+};
 </script>
 
 <template>
@@ -53,8 +63,11 @@ export default {
         EXPERIENCE
       </div>
     </div>
-    <div class="housesBox">
+    <div class="housesBox" @click="navigateToHouses">
       <div class="house">Houses</div>
+    </div>
+    <div class="datePicker" v-show="showCalendar">
+      <Calendar />
     </div>
     <div class="row p-3 mx-auto justify-content-center width">
       <div class="col justify-content-center">
@@ -68,7 +81,7 @@ export default {
               <div class="text-center">Jun</div>
             </div>
             <div class="row click">
-             <ArrowUpSvg />
+              <ArrowUpSvg />
             </div>
           </div>
         </div>
@@ -83,8 +96,8 @@ export default {
             <div class="row">
               <div class="text-center">Jun</div>
             </div>
-            <div class="row click">
-             <ArrowDownSvg />
+            <div class="row click" @click="openCalendar">
+              <ArrowDownSvg />
             </div>
           </div>
         </div>
@@ -95,14 +108,25 @@ export default {
         </div>
         <div class="row">
           <div class="col-7 text-center text-number">
-            <input class="numberOfGuests" id="number" type="number" :max="12" :min="1" pattern="[0-9]{4}" v-on:change="updateGuests" maxlength="2" :value="formattedNumber(this.guestsNumber)" autocomplete="off" >
+            <input
+              class="numberOfGuests"
+              id="number"
+              type="number"
+              :max="12"
+              :min="1"
+              pattern="[0-9]{4}"
+              v-on:change="updateGuests"
+              maxlength="2"
+              :value="formattedNumber(this.guestsNumber)"
+              autocomplete="off"
+            />
           </div>
           <div class="col-5">
             <div class="row click">
               <ArrowUpSvg @click="addGuests" />
             </div>
             <div class="row click" @click="removeGuests">
-           <ArrowDownSvg />
+              <ArrowDownSvg />
             </div>
           </div>
         </div>

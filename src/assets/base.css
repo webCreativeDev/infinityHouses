@@ -72,14 +72,20 @@ body {
   margin: auto;
 }
 .logo{
-  max-width: 200px;
+  width: min(200px,40%);
+  cursor: pointer;
+}
+.img-fluid{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 label{
   display:flex;
   flex-direction:column;
-  width:40px;
-  height: 50px;
+  width:min(40px,8vw);
+  height: min(50px,10vw);
   cursor:pointer;
 }
 
@@ -87,7 +93,7 @@ label .line{
   background: #2D362B;
   border-radius:10px;
   height:2px;
-  margin: 11px 0;
+  margin: min(11px,2vw) 0;
 
 }
 
@@ -104,4 +110,54 @@ label .line{
 .line:nth-of-type(3){
   width:100%;
 }
+.secondary-nav{
+  width: max(min(1024px,100%),70%);
+  position: fixed;
+  top: 0%;
+  background-color: var(--vt-c-dark-green);
+  right:  min(max(-1024px,-100%),-70%);
+  height: 100vh;
+  z-index: 5;
+}
+.secondary-nav.active{
+  right: 0%;
+  transition: right 1s;
+}
+.nav-close-button{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  cursor: pointer;
+}
+.left-nav{
+  list-style-type: none;
+  display: flex;
+  height: 70%;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.left-nav li {
+  font-family:LoraRegular;
+  letter-spacing: 00.19em;
+  font-size: calc(30px + (70 - 14) * ((100vw - 300px) / (1600 - 300)));
+  color: var(--vt-c-bege);
+  cursor: pointer;
+}
+.left-nav li:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+}
 
+@media only screen and (max-width: 600px) {
+  .left-nav li.active {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+  }
+}

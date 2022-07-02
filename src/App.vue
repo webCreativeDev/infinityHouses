@@ -2,7 +2,7 @@
 import { RouterLink, RouterView } from "vue-router";
 import "./assets/base.css";
 import "bootstrap";
-import CloseButton from "./components/common/closeButton.vue";
+import CloseButton from "./components/common/closeButton";
 import Pages from "./scripts/pages";
 
 

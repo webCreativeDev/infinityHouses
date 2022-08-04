@@ -3,7 +3,7 @@ import "bootstrap";
 import "../assets/styles/home.css";
 import ArrowUpSvg from "../components/common/ArrowUpSvg.vue";
 import ArrowDownSvg from "../components/common/ArrowDownSvg.vue";
-import Calendar from "../components/datepicker/calendar.vue";
+import Calendar from "../components/datepicker/Calendar.vue";
 import { disableKeys } from "../scripts/disbleInputNumberKeys";
 import "bootstrap/dist/css/bootstrap.min.css";
 

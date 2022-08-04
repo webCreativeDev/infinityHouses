@@ -1,7 +1,7 @@
 <script>
 import "../assets/styles/houses.css";
 import House from "../components/houses/House";
-import HouseComponent from "../components/houses/houseComponent.vue";
+import HouseComponent from "../components/houses/HouseComponent.vue";
 
 export default {
   data() {

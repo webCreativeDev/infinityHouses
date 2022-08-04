@@ -70,7 +70,7 @@ export default {
       <Calendar />
     </div>
     <div class="row p-3 mx-auto justify-content-center width">
-      <div class="col justify-content-center">
+      <div class="col-12 col-xl-3 justify-content-center">
         <div class="row justify-content-center">
           <div class="col text-center row-titles">check-in</div>
         </div>
@@ -86,7 +86,7 @@ export default {
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-12 col-xl-3">
         <div class="row justify-content-center row-titles">
           <div class="col text-center">check-Out</div>
         </div>
@@ -102,12 +102,12 @@ export default {
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-10 m-5 col-xl-3 m-xl-0">
         <div class="row justify-content-center">
           <div class="col text-center row-titles">Guests</div>
         </div>
         <div class="row">
-          <div class="col-7 text-center text-number">
+          <div class="col-6 text-center text-number">
             <input
               class="numberOfGuests"
               id="number"
@@ -121,7 +121,7 @@ export default {
               autocomplete="off"
             />
           </div>
-          <div class="col-5">
+          <div class="col-6">
             <div class="row click">
               <ArrowUpSvg @click="addGuests" />
             </div>
@@ -131,8 +131,8 @@ export default {
           </div>
         </div>
       </div>
-      <div class="col check-availability justify-content-center">
-        <div class="text">
+      <div class="col-12 col-xl-3 check-availability justify-content-center">
+        <div class="text-c">
           Check <br />
           Availability
         </div>

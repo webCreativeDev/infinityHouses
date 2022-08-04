@@ -20,6 +20,10 @@
   src: url(../assets/Roboto/Roboto-Regular.ttf);
 }
 @font-face {
+  font-family: RobotoBold;
+  src: url(../assets/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
   font-family: RobotoMedium;
   src: url(../assets/Roboto/Roboto-Medium.ttf);
 }
@@ -32,6 +36,7 @@
   font-family: LoraRegular;
   src: url(../assets/Lora/Lora-Regular.ttf);
 }
+
 
 
 body {

@@ -1,0 +1,101 @@
+.page-title{
+    width: 100%;
+    text-align: center;
+    font-family: LoraRegular;
+    font-size: 64px;
+    letter-spacing: 00.19em;
+    color: var(--vt-c-dark-green);
+    line-height: 60px;
+    margin-bottom: 100px;
+}
+.w80{
+    margin-top: 40px;
+    width: 75%;
+    margin:auto;
+    min-height: 90vh;
+}
+.contacts-comp{
+    margin: 40px 0px 100px 0px;
+    position: relative;
+}
+.contacts-comp .borderRight{
+    border-right: 1px solid var(--vt-c-dark-green);
+    height: 100%;
+    min-height:350px ;
+    margin: 50px 0px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.input-type-text{
+    background-color: transparent;
+    margin: 40px 0px;
+    width: 100%;
+    color: var(--vt-c-dark-green);
+    border: none;
+    border-bottom: 1px solid var(--vt-c-dark-green);
+    
+}
+input::placeholder{
+    font-family: RobotoMedium;
+    font-size: 18px;
+    letter-spacing: 00.19em;
+    color: var(--vt-c-dark-green);
+}
+textarea::placeholder{
+    font-family: RobotoMedium;
+    font-size: 18px;
+    letter-spacing: 00.19em;
+    color: var(--vt-c-dark-green);
+}
+input[type="submit"]{
+    font-family: RobotoMedium;
+    font-size: 18px;
+    letter-spacing: 00.19em;
+    color: var(--vt-c-bege);
+}
+
+
+
+.input-type-message{
+    background-color: transparent;
+    margin: 60px 0px;
+    width: 100%;
+    color: var(--vt-c-dark-green);
+    border: none;
+    border-bottom: 1px solid var(--vt-c-dark-green);
+
+}
+.input-type-button{
+    background-color: var(--vt-c-dark-green);
+    color: var(--vt-c-bege);
+    border: none;
+    padding: 10px 0px;
+    width: 100%;
+
+}
+
+.text{
+    font-family: RobotoMedium;
+    font-size: 18px;
+    width: 100%;
+    letter-spacing: 00.1em;
+    color: var(--vt-c-dark-green);
+}
+.text-{
+    font-family: RobotoRegular;
+    font-size: 18px;
+    width: 100%;
+    letter-spacing: 00.1em;
+    color: var(--vt-c-dark-green);
+    margin: 5px 0px;
+}
+.h1-{
+    font-family: RobotoMedium;
+    font-size: 26px;
+    width: 100%;
+    letter-spacing: 00.1em;
+    color: var(--vt-c-dark-green);
+    margin: 20px 0px;
+}

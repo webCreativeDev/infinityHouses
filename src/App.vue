@@ -2,8 +2,9 @@
 import { RouterLink, RouterView } from "vue-router";
 import "./assets/base.css";
 import "bootstrap";
-import CloseButton from "./components/common/closeButton";
+import CloseButton from "./components/common/closeButton.vue";
 import Pages from "./scripts/pages";
+import Footer from "./views/Footer.vue";
 
 
 export default {
@@ -12,20 +13,18 @@ export default {
             showNavBar: false,
             navWidth: null,
             currentPage : Pages.HOME,
+            disableFooter : false,
             Pages
         };
     },
     mounted() {
         window.addEventListener("resize", this.updateNavWidth);
+
     },
     unmounted() {
         window.removeEventListener("resize", this.updateNavWidth);
     },
     methods: {
-        navigateToHome() {
-            this.$router.push("/");
-            this.showNavBar = false;
-        },
         openNavBar() {
             this.showNavBar = true;
         },
@@ -35,33 +34,14 @@ export default {
         updateNavWidth() {
             this.navWidth = document.querySelector(".secondary-nav").style.width;
         },
-        navigateToHome() {
-            this.$router.push("/");
-            this.showNavBar = false;
-            this.currentpage =  Pages.HOME;
-        },
-        navigateToAboutUs() {
-            this.$router.push("/about");
-            this.showNavBar = false;
-            this.currentpage = Pages.ABOUT_US;
-        },
-        navigateToHouses() {
-            this.$router.push("/houses");
-            this.showNavBar = false;
-            this.currentpage = Pages.HOUSES;
-        },
-        navigateToServices() {
-            this.$router.push("/services");
-            this.showNavBar = false;
-            this.currentpage = Pages.SERVICES;
-            },
-        navigateToContacts() {
-            this.$router.push("/contacts");
-            this.showNavBar = false;
-            this.currentpage = Pages.CONTACTS;
-        },
+        navigateTo(place, showNav, page) {
+            this.$router.push(place);
+            this.showNavBar = showNav;
+            this.currentpage =  page;
+            this.disableFooter = !(page === this.Pages.HOME);
+        }
     },
-    components: { CloseButton }
+    components: { CloseButton , Footer }
 };
 </script>
 
@@ -85,14 +65,15 @@ export default {
       <CloseButton/>
       </div>
        <ul class="left-nav">
-        <li v-bind:class="{active : this.currentpage ===  Pages.HOME}" @click="navigateToHome">Home</li>
-        <li v-bind:class="{active : this.currentpage ===  Pages.ABOUT_US}" @click="navigateToAboutUs">About Us</li>
-        <li v-bind:class="{active : this.currentpage ===  Pages.HOUSES}" @click="navigateToHouses">Houses</li>
-        <li v-bind:class="{active : this.currentpage ===  Pages.SERVICES}" @click="navigateToServices">Services</li>
-        <li v-bind:class="{active : this.currentpage ===  Pages.CONTACTS}" @click="navigateToContacts">Contacts</li>
+        <li v-bind:class="{active : this.currentpage ===  Pages.HOME}" @click="navigateTo('/',false,Pages.HOME)">Home</li>
+        <li v-bind:class="{active : this.currentpage ===  Pages.ABOUT_US}" @click="navigateTo('/about',false,Pages.ABOUT_US)">About Us</li>
+        <li v-bind:class="{active : this.currentpage ===  Pages.HOUSES}" @click="navigateTo('/houses',false,Pages.HOUSES)">Houses</li>
+        <li v-bind:class="{active : this.currentpage ===  Pages.SERVICES}" @click="navigateTo('/services',false,Pages.SERVICES)">Services</li>
+        <li v-bind:class="{active : this.currentpage ===  Pages.CONTACTS}" @click="navigateTo('/contacts',false,Pages.CONTACTS)">Contacts</li>
       </ul>
       </div>
     </div>
   </header>
   <RouterView />
+  <Footer :disable="disableFooter" />
 </template>

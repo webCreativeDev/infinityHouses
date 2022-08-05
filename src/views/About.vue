@@ -1,10 +1,10 @@
 <template>
   <div class="row">
-    <div class="col-1">
+    <div class="col-12 col-xl-6 col-1">
       <div class="box green-box"></div>
       <div class="box image-box"></div>
     </div>
-    <div class="col-1">
+    <div class="col-12 col-xl-6">
       <div class="title-about">About Us</div>
       <div class="text-about">
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -39,7 +39,7 @@
           <li>Canoeing</li>
         </ul>
       </div>
-      <div class="col-60">Activities</div>
+      <div class="col-60"></div>
     </div>
   </div>
 </template>

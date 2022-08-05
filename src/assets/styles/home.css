@@ -27,7 +27,7 @@
     background-color: var(--vt-c-dark-green);
     color: var(--vt-c-bege);
     border: 1px solid var(--vt-c-bege);
-    font-size: clamp(1.2rem, -0.875rem + 8.333vw, 2rem) !important;;
+    font-size: clamp(1.2rem, -0.875rem + 8.333vw, 2rem) !important;
     width: min(250px,42%);
     margin-top: 50px;
     margin-left: auto;

@@ -2,7 +2,7 @@
     width: 100%;
     text-align: center;
     font-family: LoraRegular;
-    font-size: 64px;
+    font-size: clamp(3rem, -0.875rem + 8.333vw, 4rem) !important;
     letter-spacing: 00.19em;
     color: var(--vt-c-dark-green);
     line-height: 60px;
@@ -12,7 +12,7 @@
     text-align: center;
     margin: 50px auto;
     font-family: RobotoMedium;
-    font-size: 22px;
+    font-size: clamp(1.2rem, -0.875rem + 6vw, 1.4rem) !important;
     letter-spacing: 00.19em;
     color: var(--vt-c-dark-green);
 }
@@ -31,37 +31,47 @@
 .col-30{
     width: 40%;
 }
-.col-70{
-    width: 60%;
+.col-9{
+    position: relative;
+    min-height: 250px;
+    min-width: 200px;
 }
-.col-70 .title{
+.col-xl-7 .title{
     font-family: LoraRegular;
-    font-size: 64px;
+    font-size: clamp(3rem, -0.875rem + 8.333vw, 4rem) !important;
     letter-spacing: 00.19em;
     color: var(--vt-c-bege);
     line-height: 60px;
     margin-bottom: 50px;
 }
+.img-luxury{
+    margin: auto;
+    margin-bottom: 100px;
+}
 
-.col-70 ul li{
+.col-xl-7 ul li{
     letter-spacing: 00.19em;
     font-family: RobotoRegular;
     color: var(--vt-c-bege);
-    font-size: 28px;
+    font-size: clamp(1.2rem, -0.875rem + 6vw, 1.4rem) !important;
     line-height: 55px;
 } 
 
 .img-container{
-    width: 22vw;
-    height: 30vw;
-    background-color: #C4C4C4;
-}
-.col-romantic{
-    width: 50%;
+position: absolute;
+width: 60%;
+top: 45%;
+left: 50%;
+height: 120%;
+min-height: 300px;
+min-width: 250px;
+z-index: 10;
+background-color: #C4C4C4;
+transform: translate(-50%,-50%);
 }
 .col-romantic .title{
     font-family: LoraRegular;
-    font-size: 64px;
+    font-size:clamp(2.5rem, -0.875rem + 8.333vw, 4rem) !important;
     letter-spacing: 00.19em;
     color: var(--vt-c-dark-green);
     line-height: 60px;
@@ -72,14 +82,14 @@
     letter-spacing: 00.19em;
     font-family: RobotoRegular;
     color: var(--vt-c-dark-green);
-    font-size: 28px;
+    font-size:   clamp(1.2rem, -0.875rem + 6vw, 1.4rem) !important;
     line-height: 55px;
 } 
 
 .col-romantic-img-container{
-    width: 50%;
+
     height: 20vw;
-    margin: auto;
+    margin: 30px auto;
     background-color: #C4C4C4;
 }
 .col-romantic-img-container .img{
@@ -88,3 +98,13 @@
     margin: auto;
     background-color: #C4C4C4;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+    .page-text{
+        width: 80%;
+    }
+      
+  }
+

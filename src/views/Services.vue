@@ -10,10 +10,10 @@ import "../assets/styles/services.css";
   </div>
   <div class="row-services">
     <div class="row-container">
-      <div class="col-30">
+      <div class="col-9 col-xl-5 img-luxury">
         <div class="img-container"></div>
       </div>
-      <div class="col-70">
+      <div class="col-9 col-xl-7">
         <div class="title">Luxury</div>
         <ul>
           <li>Moet & Chandom</li>
@@ -25,8 +25,8 @@ import "../assets/styles/services.css";
       </div>
     </div>
   </div>
-   <div class="row-container">
-         <div class="col-romantic">
+   <div class="row row-container">
+         <div class="col-9 col-xl-7 col-romantic">
         <div class="title">Romantic</div>
         <ul>
           <li>sparkling wine</li>
@@ -35,7 +35,7 @@ import "../assets/styles/services.css";
           <li>love decoration</li>
         </ul>
       </div>
-      <div class="col-romantic-img-container">
+      <div class="col-9 col-xl-5 col-romantic-img-container">
         <div class="img"></div>
       </div>
       

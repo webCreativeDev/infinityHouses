@@ -1,17 +1,15 @@
 .Houses{
-    display: flex !important;
     width: 80%;
     margin: auto;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
 }
 .page-title{
     width: 100%;
     text-align: center;
     font-family: LoraRegular;
-    font-size: 64px;
+    font-size: clamp(3rem, -0.875rem + 8.333vw, 4rem) !important;
     letter-spacing: 00.19em;
     color: var(--vt-c-dark-green);
     line-height: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px !important;
 }

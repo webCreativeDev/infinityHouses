@@ -1,7 +1,7 @@
 <template>
-  <div class="footer" v-show="disable">
+  <div class="footer">
     <div class="row rel">
-      <div class="col">
+      <div class="col-10 col-lg-4 col-sm-6 col-md-4 col-xl-2">
         <div class="fot-h1">Menu</div>
         <ul class="fot-list">
           <li class="ext-link" @click="navigateTo('/')">Home</li>
@@ -11,7 +11,7 @@
           <li class="ext-link" @click="navigateTo('/Contacts')">Contacts</li>
         </ul>
       </div>
-      <div class="col">
+      <div class="col-10 col-lg-4 col-sm-6 col-md-4 col-xl-2">
         <div class="fot-h1">Houses</div>
         <ul class="fot-list">
           <li class="ext-link" @click="navigateTo('/House/')" >Family House T3</li>
@@ -21,14 +21,14 @@
           <li class="ext-link" @click="navigateTo('/House/')" >Kika House T1</li>
         </ul>
       </div>
-      <div class="col">
+      <div class="col-10 col-lg-4 col-sm-6 col-md-4 col-xl-2">
         <div class="fot-h1">Packs</div>
         <ul class="fot-list">
           <li class="ext-link" @click="navigateTo('/Services')">Luxury</li>
           <li class="ext-link" @click="navigateTo('/Services')">In Love</li>
         </ul>
       </div>
-      <div class="col">
+      <div class="col-10 col-lg-4 col-sm-6 col-md-6 col-xl-2">
         <div class="fot-h1">Contacts</div>
         <ul class="fot-list">
           <li>+351 965 627 880</li>
@@ -39,10 +39,10 @@
           </li>
         </ul>
       </div>
-      <div class="col-sm-1 esp">
+      <div class="col-xl-2 esp">
         <div class="vl"></div>
       </div>
-      <div class="col">
+      <div class="col-10 col-lg-4 col-md-6 col-sm-6  col-xl-2">
         <div class="fot-h1">Connect</div>
         <ul class="fot-list">
           <li class="ext-link" v-on:click="openExtLink(facebook)">Facebook</li>
@@ -58,7 +58,7 @@
   </div>
 </template>
 
-<script>
+<script> 
 import "../assets/styles/footer.css";
 export default {
   data() {

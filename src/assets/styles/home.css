@@ -42,6 +42,9 @@
     background-color: var(--vt-c-bege);
     color: var(--vt-c-dark-green);
   }
+  main{
+    min-height: calc(100vh - 100px);
+  }
   
 
 

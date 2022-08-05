@@ -25,7 +25,7 @@ export default {
 <div class="page-title">
 Houses
 </div>
-  <div class="Houses">
+  <div class="Houses row">
     <HouseComponent v-for="classHouse in houses" :house="classHouse" />
   </div>
 </template>

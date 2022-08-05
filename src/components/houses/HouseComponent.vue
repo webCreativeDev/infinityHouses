@@ -13,7 +13,9 @@ export default {
 </script>
 
 <template>
-  <div class="house-card">
+  <div class="house-card col-12 col-md-6 col-lg-6 col-xl-4">
+    <div class="card-size">
+
     <div class="house-img"></div>
     <div class="house-title">
       {{ house.name }}
@@ -22,5 +24,6 @@ export default {
     <div class="house-ocupation">Ocupation : {{ house.ocupation }}</div>
     <div class="house-price">Price : {{ house.price }}</div>
     <div class="house-btn-reserve">Reserve</div>
+      </div>
   </div>
 </template>

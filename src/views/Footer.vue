@@ -52,7 +52,7 @@
       </div>
     </div>
     <div class="copyrigth">
-      Registo Nacional de Turismo n.º 10659 - Livro de reclamações
+      Registo Nacional de Turismo n.º 10659, 10660 - Livro de reclamações
       online - Infinityhouses © All rights reserved.
     </div>
   </div>

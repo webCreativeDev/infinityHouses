@@ -5,7 +5,7 @@ import "bootstrap";
 import CloseButton from "./components/common/CloseButton.vue";
 import Pages from "./scripts/pages";
 import Footer from "./views/Footer.vue";
-import Working from "./views/working.vue";
+import Working from "./views/Working.vue";
 import casa from './assets/imgs/quarto.jpg';
 
 

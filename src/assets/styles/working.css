@@ -1,0 +1,58 @@
+.pageContainer{
+position: absolute;
+top: 0px;
+left: 0px;
+z-index: 100;
+width: 100vw;
+height: 100vh;
+background-color: var(--vt-c-bege);
+}
+.working{
+    position: relative;
+    width: 90%;
+    margin: max(200px,10%) auto max(3%,30px) auto;
+    text-align: center;
+    font-family: loraMedium;
+    font-size: clamp(1.5rem, -0.875rem + 8.333vw, 3rem) !important;
+    letter-spacing: 00.19em;
+    color: var(--vt-c-dark-green);
+    line-height: 50px;
+}
+
+.workingsmall{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-family: LoraRegular;
+    font-size: clamp(0.8rem, -0.875rem + 8.333vw, 1.5rem) !important;
+    letter-spacing: 00.15em;
+    color: var(--vt-c-dark-green);
+    line-height: 40px;
+}
+
+.housesBox2{
+    width: 100%;
+  }
+  .house{
+    font-family: RobotoLight;
+    font-weight: 300;
+    letter-spacing: 0.19em;
+    background-color: var(--vt-c-dark-green);
+    color: var(--vt-c-bege);
+    border: 1px solid var(--vt-c-bege);
+    font-size: clamp(1.2rem, -0.875rem + 8.333vw, 2rem) !important;
+    width: min(250px,42%);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition-duration: 500ms;
+  }
+  .house:hover{
+    border: 1px solid var(--vt-c-dark-green);
+    background-color: var(--vt-c-bege);
+    color: var(--vt-c-dark-green);
+  }

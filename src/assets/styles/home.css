@@ -14,7 +14,7 @@
     margin-right: auto;
     margin-top: 60px;
     margin-bottom: 40px;
-    background-color: #2D362B;
+    background-color: var(--vt-c-bege);
     border: none;
   }
   .housesBox{
@@ -24,9 +24,9 @@
     font-family: RobotoLight;
     font-weight: 300;
     letter-spacing: 0.19em;
-    background-color: var(--vt-c-dark-green);
-    color: var(--vt-c-bege);
-    border: 1px solid var(--vt-c-bege);
+    color: var(--vt-c-dark-green);
+    background-color: var(--vt-c-bege);
+    border: 1px solid var(--vt-c-dark-green);
     font-size: clamp(1.2rem, -0.875rem + 8.333vw, 2rem) !important;
     width: min(250px,42%);
     margin-top: 50px;
@@ -39,8 +39,8 @@
   }
   .house:hover{
     border: 1px solid var(--vt-c-dark-green);
-    background-color: var(--vt-c-bege);
-    color: var(--vt-c-dark-green);
+    background-color: var(--vt-c-dark-green);
+    color: var(--vt-c-bege);
   }
   main{
     min-height: calc(100vh - 100px);
@@ -50,16 +50,17 @@
 
   .textStyle{
     letter-spacing: 4px;
-    color: var(--vt-c-dark-green) !important;
+    color: var(--vt-c-bege) !important;
     font-size: 18px;
-    font-weight: 400;
+    font-family: RobotoRegular;
+    font-weight: 500;
     line-height: 21px;
     margin-top: 30px;
   }
   
   .h1{
     letter-spacing: 4px;
-    color: var(--vt-c-dark-green) !important;
+    color: var(--vt-c-bege) !important;
     font-family: LoraRegular;
     margin-top: 80px;
     font-style: normal;
@@ -79,12 +80,18 @@
   .width{
       width: 70% !important;
       margin-top: 70px !important;
+     
   }
+  .back{
+    background-color: var(--vt-c-bege);
+}
+  
   .check-availability{
-      background-color: var(--vt-c-dark-green);
-      color: var(--vt-c-bege);
+   
+      color: var(--vt-c-dark-green);
       text-align: center;
       cursor: pointer;
+      background-color: var(--vt-c-bege);
   }
   .check-availability .text-c{
     letter-spacing: 00.19em;

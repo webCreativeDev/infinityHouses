@@ -5,6 +5,8 @@ import "bootstrap";
 import CloseButton from "./components/common/CloseButton.vue";
 import Pages from "./scripts/pages";
 import Footer from "./views/Footer.vue";
+import Working from "./views/working.vue";
+import casa from './assets/imgs/quarto.jpg';
 
 
 export default {
@@ -12,9 +14,11 @@ export default {
         return {
             showNavBar: false,
             navWidth: null,
-            currentPage : Pages.HOME,
+            currentPage : 0,
             disableFooter : false,
-            Pages
+            casa : casa,
+            Pages: Pages,
+            
         };
     },
     mounted() {
@@ -34,19 +38,26 @@ export default {
         updateNavWidth() {
             this.navWidth = document.querySelector(".secondary-nav").style.width;
         },
+
         navigateTo(place, showNav, page) {
-            this.$router.push(place);
-            this.showNavBar = showNav;
+          this.showNavBar = showNav;
             this.currentpage =  page;
+            this.$router.push(place);
             this.disableFooter = !(page === this.Pages.HOME);
         }
     },
-    components: { CloseButton , Footer }
+    computed : {
+      page(){
+        return this.currentPage === Pages.HOME;
+      }
+    },
+    components: { CloseButton, Footer, Working }
 };
 </script>
 
 <template>
   <header>
+    <Working/>
     <div class="wrapper">
       <nav
         class="navbar navbar-expand-sm d-flex flex-row-reverse justify-content-between align-items-center my-2"
@@ -56,7 +67,7 @@ export default {
           <div class="line"></div>
           <div class="line"></div>
         </label>
-        <div class="logo" @click="navigateToHome">
+        <div class="logo" @click="navigateTo('/',false,Pages.HOME)">
           <img src="./assets/logo.png" class="img-fluid" alt="..." />
         </div>
       </nav>
@@ -74,6 +85,9 @@ export default {
       </div>
     </div>
   </header>
+  <div class="casaimg" v-show="page">
+    <img :src="casa">
+  </div>
   <RouterView />
   <Footer :disable="disableFooter" />
 </template>

@@ -7,11 +7,11 @@ export default {
   data() {
     return {
       houses: [
-        new House("Family House - T3", "6", "165€"),
-        new House("Kiko House - T1", "2", "75€"),
-        new House("Family House - T2", "4", "140€"),
-        new House("Family House - T1", "2", "80€"),
-        new House("Kika House - T1", "2", "80€"),
+        new House("Family House", "6", "165€"),
+        new House("Gold House", "2", "75€"),
+        new House("Copper House", "4", "140€"),
+        new House("Silver House", "2", "80€"),
+        new House("Natural House", "2", "80€"),
       ],
     };
   },

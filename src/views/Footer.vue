@@ -14,11 +14,11 @@
       <div class="col-10 col-lg-4 col-sm-6 col-md-4 col-xl-2">
         <div class="fot-h1">Houses</div>
         <ul class="fot-list">
-          <li class="ext-link" @click="navigateTo('/House/')" >Family House T3</li>
-          <li class="ext-link" @click="navigateTo('/House/')" >Family House T2</li>
-          <li class="ext-link" @click="navigateTo('/House/')" >Family House T1</li>
-          <li class="ext-link" @click="navigateTo('/House/')" >Kiko House T1</li>
-          <li class="ext-link" @click="navigateTo('/House/')" >Kika House T1</li>
+          <li class="ext-link" @click="navigateTo('/House/')" >Family House</li>
+          <li class="ext-link" @click="navigateTo('/House/')" >Gold House</li>
+          <li class="ext-link" @click="navigateTo('/House/')" >Copper House</li>
+          <li class="ext-link" @click="navigateTo('/House/')" >Silver House</li>
+          <li class="ext-link" @click="navigateTo('/House/')" >Natural House</li>
         </ul>
       </div>
       <div class="col-10 col-lg-4 col-sm-6 col-md-4 col-xl-2">

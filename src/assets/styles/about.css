@@ -5,6 +5,10 @@
     flex-wrap: wrap;
 
 }
+.marg-50{
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
 .col-1{
     min-height: 300px;
     position: relative;
@@ -87,9 +91,12 @@
   }
   .row-85{
     width: 85%;
-    margin: 35px auto 0px auto;
+    margin: 30px auto 0px auto;
     position: relative;
 
+  }
+  .marg-top-50{
+     margin: 300px auto 0px auto;
   }
   .wrapper-interests{
     padding: 40px 0px;

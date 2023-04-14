@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row marg-50">
     <div class="col-12 col-xl-6 col-1">
       <div class="box green-box"></div>
       <div class="box image-box"></div>
@@ -16,7 +16,7 @@
     </div>
   </div>
   <div class="interest-points">
-    <div class="row-85">
+    <div class="row-85 marg-top-50">
       <div class="wrapper-interests">
         <div class="title-interests">Interest Points</div>
         <div class="interests">

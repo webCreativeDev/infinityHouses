@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <div class="row rel">
+    <div class="row rowa rel">
       <div class="col-10 col-lg-4 col-sm-6 col-md-4 col-xl-2">
         <div class="fot-h1">Menu</div>
         <ul class="fot-list">

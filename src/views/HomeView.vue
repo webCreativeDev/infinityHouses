@@ -5,6 +5,7 @@ import ArrowUpSvg from "../components/common/ArrowUpSvg.vue";
 import ArrowDownSvg from "../components/common/ArrowDownSvg.vue";
 import Calendar from "../components/datepicker/calendar.vue";
 import { disableKeys } from "../scripts/disbleInputNumberKeys";
+import casa from '../assets/imgs/quarto.jpg';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default {
@@ -12,6 +13,7 @@ export default {
     return {
       guestsNumber: 1,
       showCalendar: false,
+      casa: casa,
     };
   },
   methods: {
@@ -44,13 +46,29 @@ export default {
     Calendar,
   },
   mounted() {
-    disableKeys();
+    disableKeys()
+    var elem = document.querySelector(".img-fluid");
+    elem.style.filter = "invert(1)"
+    var lines = [...document.querySelectorAll(".line")];
+    lines.map((e) => e.style.background = "white")
+
   },
+  unmounted() {
+    var elem = document.querySelector(".img-fluid");
+    elem.style.filter = "invert(0)"
+    var lines = [...document.querySelectorAll(".line")];
+    lines.map((e) => e.style.background = "#2D362B")
+
+  }
+
 };
 </script>
 
 <template>
   <main>
+    <div class="casaimg">
+      <img :src="casa">
+    </div>
     <div class="text-center w-100 textStyle">
       <div>Tourism Houses</div>
     </div>
@@ -108,18 +126,8 @@ export default {
         </div>
         <div class="row">
           <div class="col-6 text-center text-number">
-            <input
-              class="numberOfGuests"
-              id="number"
-              type="number"
-              :max="12"
-              :min="1"
-              pattern="[0-9]{4}"
-              v-on:change="updateGuests"
-              maxlength="2"
-              :value="formattedNumber(this.guestsNumber)"
-              autocomplete="off"
-            />
+            <input class="numberOfGuests" id="number" type="number" :max="12" :min="1" pattern="[0-9]{4}"
+              v-on:change="updateGuests" maxlength="2" :value="formattedNumber(this.guestsNumber)" autocomplete="off" />
           </div>
           <div class="col-6">
             <div class="row click">

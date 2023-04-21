@@ -1,5 +1,5 @@
 <template>
-  <div class="row marg-50">
+  <div class="row row- marg-50">
     <div class="col-12 col-xl-6 col-1">
       <div class="box green-box"></div>
       <div class="box image-box"></div>

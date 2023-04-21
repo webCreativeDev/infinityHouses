@@ -148,6 +148,21 @@ input[type=number] {
  padding-bottom: 15px;
 }
 
+.casaimg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -40;
+}
+.casaimg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 @media only screen and (max-width: 600px) {
   .numberOfGuests{
     background-color: transparent;

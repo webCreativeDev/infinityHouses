@@ -6,7 +6,6 @@ import CloseButton from "./components/common/CloseButton.vue";
 import Pages from "./scripts/pages";
 import Footer from "./views/Footer.vue";
 import Working from "./views/Working.vue";
-import casa from './assets/imgs/quarto.jpg';
 
 
 export default {
@@ -16,7 +15,6 @@ export default {
             navWidth: null,
             currentPage : 0,
             disableFooter : false,
-            casa : casa,
             Pages: Pages,
             
         };
@@ -68,7 +66,7 @@ export default {
           <div class="line"></div>
         </label>
         <div class="logo" @click="navigateTo('/',false,Pages.HOME)">
-          <img src="./assets/logo.png" class="img-fluid" alt="..." />
+          <img  src="./assets/logo.png" class="img-fluid" alt="..." />
         </div>
       </nav>
       <div class="secondary-nav" v-bind:class="{ active: this.showNavBar }">
@@ -85,9 +83,6 @@ export default {
       </div>
     </div>
   </header>
-  <div class="casaimg" v-show="page">
-    <img :src="casa">
-  </div>
   <RouterView />
   <Footer :disable="disableFooter" />
 </template>

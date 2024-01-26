@@ -32,6 +32,10 @@
         <div class="fot-h1">Contacts</div>
         <ul class="fot-list">
           <li>+351 965 627 880 <br>
+            +351 965 831 722<br>
+            +351 961 974 987<br>
+            <br>
+
             Call to the national mobile network
           </li>
           <li>laurebola@gmail.com</li>

@@ -148,6 +148,20 @@ input[type=number] {
  padding-bottom: 15px;
 }
 
+.feder{
+  width: min(400px,50%);
+  position:fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+}
+
+.img-feder{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+}
 .casaimg{
   position: absolute;
   top: 0;
@@ -173,5 +187,18 @@ input[type=number] {
   .width{
     width: 80% !important;
     margin-top: 40px !important;
+}
+.feder{
+  width: min(400px,50%);
+  position:fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.img-feder{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
 }
 }

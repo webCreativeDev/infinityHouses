@@ -6,7 +6,7 @@
 
 }
 .marg-50{
-  margin-top: 150px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 .col-1{
@@ -16,48 +16,52 @@
     margin-bottom: 80px;
 }
 
-.green-box{
+.col-1 .green-box{
     position: absolute;
     background-color: var(--vt-c-dark-green);
     min-width: 200px;
     min-height: 300px;
-    width: 20vw;
-    height: 25vw;
-    top: 58%;
-    left: 43%;
-    transform: translate(-50%,-50%);
+    width: 25vw;
+    height: 35vw;
+    left: 18%;
 }
-.image-box{
+.col-1 .image-box{
     position: absolute;
     background-color: #C4C4C4;
     min-width: 200px;
     min-height: 300px;
     z-index: 2;
-    width: 20vw;
-    height: 25vw;
-    top: 70%;
-    left: 55%;
-    transform: translate(-50%,-50%);
+    width: 25vw;
+    height: 35vw;
+    top: 50px;
+    left: 30%;
 }
 
 .title-about{
-    margin-top: 8vw;
+    margin-bottom: 20px;
     font-family: LoraRegular;
     font-size: clamp(3rem, -0.875rem + 4vw, 4rem) !important;
-    
     letter-spacing: 00.19em;
     color: var(--vt-c-dark-green);
-    line-height: 60px;
+    line-height: 80px;  
 }
 .text-about{
-    margin-top: 2vw;
+    margin: 30px auto 0 0;
     font-family: RobotoRegular;
     font-size: clamp(1.2rem, -0.875rem + 2vw, 1.5rem) !important;;
-    
-    letter-spacing: 00.19em;
+    letter-spacing: 00.08em;
     color: var(--vt-c-dark-green);
+    width: 90%;
     line-height: 30px;
-    letter-spacing: 00.10em;
+}
+.text-a{
+  margin: 0 auto 0 0;
+  font-family: RobotoRegular;
+  font-size: clamp(1.2rem, -0.875rem + 2vw, 1.5rem) !important;;
+  letter-spacing: 00.08em;
+  color: var(--vt-c-dark-green);
+  width: 90%;
+  line-height: 28px;
 }
 
 .more-btn{
@@ -86,9 +90,11 @@
     width: 100%;
     background-color: var(--vt-c-ligther-green);
     height: auto;
-    margin-top: 200px;
+    margin-top: 100px;
     position: relative;
   }
+
+  
   .row-85{
     width: 85%;
     margin: 30px auto 0px auto;
@@ -98,6 +104,9 @@
   .marg-top-50{
      margin: 300px auto 0px auto;
   }
+  .marg-top-0{
+    margin: 0px auto 0px auto;
+ }
   .wrapper-interests{
     padding: 40px 0px;
   }

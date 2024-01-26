@@ -6,6 +6,8 @@ import ArrowDownSvg from "../components/common/ArrowDownSvg.vue";
 import Calendar from "../components/datepicker/calendar.vue";
 import { disableKeys } from "../scripts/disbleInputNumberKeys";
 import casa from '../assets/imgs/quarto.jpg';
+import view from '../assets/imgs/view.jpg';
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default {
@@ -14,6 +16,7 @@ export default {
       guestsNumber: 1,
       showCalendar: false,
       casa: casa,
+      view: view
     };
   },
   methods: {
@@ -39,6 +42,9 @@ export default {
     navigateToHouses() {
       this.$router.push("/houses");
     },
+    navigateToProjectInfo() {
+      this.$router.push("/project");
+    },
   },
   components: {
     ArrowUpSvg,
@@ -46,7 +52,7 @@ export default {
     Calendar,
   },
   mounted() {
-    disableKeys()
+   // disableKeys()
     var elem = document.querySelector(".img-fluid");
     elem.style.filter = "invert(1)"
     var lines = [...document.querySelectorAll(".line")];
@@ -66,6 +72,9 @@ export default {
 
 <template>
   <main>
+    <div class="feder" @click="navigateToProjectInfo">
+          <img  src="../assets/imgs/barra_feder.jpg" class="img-feder" alt="..." />
+        </div>
     <div class="casaimg">
       <img :src="casa">
     </div>
@@ -84,10 +93,8 @@ export default {
     <div class="housesBox" @click="navigateToHouses">
       <div class="house">Houses</div>
     </div>
-    <div class="datePicker" v-show="showCalendar">
-      <Calendar />
-    </div>
-    <div class="row p-3 mx-auto justify-content-center width">
+
+    <div v-if="false" class="row p-3 mx-auto justify-content-center width">
       <div class="col-10 m-3 m-lg-5 col-xl-3 m-xl-0 justify-content-center back">
         <div class="row justify-content-center">
           <div class="col text-center row-titles">check-in</div>
@@ -146,5 +153,6 @@ export default {
         </div>
       </div>
     </div>
+
   </main>
 </template>

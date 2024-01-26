@@ -7,29 +7,6 @@ width: 100vw;
 height: 100vh;
 background-color: var(--vt-c-bege);
 }
-.working{
-    position: relative;
-    width: 90%;
-    margin: max(200px,10%) auto max(3%,30px) auto;
-    text-align: center;
-    font-family: loraMedium;
-    font-size: clamp(1.5rem, -0.875rem + 8.333vw, 3rem) !important;
-    letter-spacing: 00.19em;
-    color: var(--vt-c-dark-green);
-    line-height: 50px;
-}
-
-.workingsmall{
-    position: relative;
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    font-family: LoraRegular;
-    font-size: clamp(0.8rem, -0.875rem + 8.333vw, 1.5rem) !important;
-    letter-spacing: 00.15em;
-    color: var(--vt-c-dark-green);
-    line-height: 40px;
-}
 
 .housesBox2{
     width: 100%;

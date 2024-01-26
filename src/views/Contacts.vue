@@ -36,7 +36,9 @@
         </div>
 
         <div class="h1-">Phone</div>
-        <div class="text-">+351 965 627 880</div>
+        <div class="text-">+351 965 627 880 <br>
+          Call to the national mobile network
+        </div>
 
         <div class="h1-">Email</div>
         <div class="text-">laurebola@gmail.com</div>

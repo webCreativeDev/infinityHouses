@@ -5,7 +5,6 @@ import "bootstrap";
 import CloseButton from "./components/common/CloseButton.vue";
 import Pages from "./scripts/pages";
 import Footer from "./views/Footer.vue";
-import Working from "./views/Working.vue";
 
 
 export default {
@@ -49,13 +48,12 @@ export default {
         return this.currentPage === Pages.HOME;
       }
     },
-    components: { CloseButton, Footer, Working }
+    components: { CloseButton, Footer }
 };
 </script>
 
 <template>
   <header>
-    <Working/>
     <div class="wrapper">
       <nav
         class="navbar navbar-expand-sm d-flex flex-row-reverse justify-content-between align-items-center my-2"
@@ -65,6 +63,7 @@ export default {
           <div class="line"></div>
           <div class="line"></div>
         </label>
+       
         <div class="logo" @click="navigateTo('/',false,Pages.HOME)">
           <img  src="./assets/logo.png" class="img-fluid" alt="..." />
         </div>

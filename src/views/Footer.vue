@@ -31,7 +31,9 @@
       <div class="col-10 col-lg-4 col-sm-6 col-md-6 col-xl-2">
         <div class="fot-h1">Contacts</div>
         <ul class="fot-list">
-          <li>+351 965 627 880</li>
+          <li>+351 965 627 880 <br>
+            Call to the national mobile network
+          </li>
           <li>laurebola@gmail.com</li>
           <li style="line-height: 26px;">
            Rua da Electra del lima nº 657 e 693<br />

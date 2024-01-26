@@ -11,21 +11,25 @@
     <div class="col-12 col-xl-7">
       <div class="title-about">About Us</div>
       <div class="text-about">
-        <p>  Com vista para o jardim e para a serra, o INFINITY HOUSES está localizado em Ponte da Barca,
-         a 45 km do Santuário de São Bento da Porta Aberta e das Termas do Gerês.
-         Esta propriedade sustentável dispõe de estacionamento privado no local.
-         Os hóspedes desfrutam de vistas para o rio{{ show ? '.' : '...' }}
+        <p> Overlooking the garden and the mountains, INFINITY HOUSES is located in Ponte da Barca,
+         45 km from the Sanctuary of São Bento da Porta Aberta and Termas do Gerês.
+         This sustainable property offers private parking on site.
+         Guests enjoy river views{{ show ? '.' : '...' }}
         </p>
         
         </div>
       <div class="text-a" v-show="show">
-        <p>  As unidades estão equipadas com ar condicionado, uma televisão de ecrã plano com canais por cabo, uma máquina de lavar louça, uma máquina de café, um chuveiro, roupões de banho e um roupeiro. Com uma casa de banho privativa equipada com um secador de cabelo, as unidades do complexo de villas também providenciam acesso Wi-Fi gratuito. Alguns quartos incluem um terraço. Todas as unidades do complexo de villas estão equipadas com roupa de cama e toalhas.
+        <p> The units are equipped with air conditioning, a flat-screen TV with cable channels, a dishwasher, a coffee machine, a shower, bathrobes and a wardrobe. With a private bathroom equipped with a hairdryer, units at the villa complex also provide free WiFi. Some rooms include a terrace. All units in the villa complex are equipped with bed linen and towels.
+
         </p>
-        <p> Se preferir cozinhar no conforto da sua própria casa, poderá usufruir das comodidades de cozinha, que incluem um forno, uma chaleira e um micro-ondas.
+        <p>If you prefer to cook in the comfort of your own home, you can make use of the kitchen facilities, which include an oven, kettle and microwave.
+
         </p>
-        <p>  Os hóspedes da villa poderão desfrutar de atividades em Ponte da Barca e nos arredores, como caminhadas.
+        <p>  Caniçada Dam is 48 km from INFINITY HOUSES, while Braga Cathedral is 49 km away. The nearest airport is Vigo Airport, 92 km from the accommodation.
+
+
         </p>
-        <p>  A Barragem da Caniçada fica a 48 km do INFINITY HOUSES, enquanto a Sé Catedral de Braga está a 49 km. O aeroporto mais próximo é o Aeroporto de Vigo, a 92 km do alojamento.
+        <p>  
         </p>
         </div>
       <div class="more-btn" @click="showMore">{{ show ? 'Read Less' : 'Read More' }}</div>

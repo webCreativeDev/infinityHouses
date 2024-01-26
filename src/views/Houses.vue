@@ -14,11 +14,12 @@ export default {
   data() {
     return {
       houses: [
-        new House("Family House", "4", "140€",family),
         new House("Gold House", "2", "90€",gold),
         new House("Copper House", "2", "90€",copper),
         new House("Silver House", "2", "90€",silver),
         new House("Natural House", "2", "90€",natural),
+        new House("Family House", "4", "140€",family),
+
       ],
     };
   },
